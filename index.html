@@ -4,15 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="./main.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <nav class="flex items-center max-w-[1200px] h-[100px] border mx-auto">
-            <div class="">
-                <img src="./images/logo.png" width="86" alt="">
+<body class="font-montserrat" >
+    <header class="bg-white">
+        <!-- navbar -->
+        <nav class="flex justify-between items-center max-w-[1200px] h-[100px]  mx-auto">
+            <!-- left  -->
+          <div class="flex items-center space-x-16">
+            <div class="h-12 w-20 object-cover object-center">
+                <img src="./images/redbusLogo.svg" alt="logo">
             </div>
+            <div class="h-5 border-l" ></div>
+            <ul class="flex space-x-3  text-blackText ">
+                <li>
+                    <a class="flex flex-col gap-2 items-center px-[10px] py-[14px]  rounded-lg hover:bg-[#F0F0F0]" href="">
+                        <img src="./images/rb_vertical.svg" alt="logo">
+                        <span class="font-medium text-sm opacity-90">Bus Tickets</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex flex-col gap-2 items-center px-[10px] py-[14px]  rounded-lg hover:bg-[#F0F0F0]" href="">
+                        <img src="./images/ryde_vertical.svg" alt="logo">
+                        <span class="font-medium text-sm opacity-90">Cab Rental</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex flex-col gap-2 items-center px-[10px] py-[14px]  rounded-lg hover:bg-[#F0F0F0]" href="">
+                        <img src="./images/rail_vertical.svg" alt="logo">
+                        <span class="font-medium text-sm opacity-90">Train Tickets</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+          <!-- right -->
+          <div>
+            <ul class="flex items-center space-x-4">
+                <li>
+                    <a class="flex gap-2 items-center px-2 py-[6px]  hover:rounded-lg hover:bg-[#F0F0F0] transition duration-300 ease-out" href="">
+                        <img class="h-[22px] w-[22px] object-contain" src="./images/headset.png" alt="logo">
+                        <span class="font-medium text-sm opacity-90">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex gap-2 items-center px-2 py-[6px]  hover:rounded-lg hover:bg-[#F0F0F0] transition duration-300 ease-out" href="">
+                        <img class="h-[22px] w-[22px] object-contain" src="./images/user.svg" alt="logo">
+                        <div class="flex gap-1 items-center">
+                            <span class="font-medium text-sm opacity-90">Account</span>
+                        <img class="h-2 w-2 object-contain" src="./images/down.svg" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+          </div>
         </nav>
     </header>
 </body>
